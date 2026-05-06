@@ -4,11 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 Sean Wood</title>
+    <title>WDD131 - Dynamic Web Fundamentals - Sean Wood</title>
+    <meta name="description"
+        content="The landing page for WDD 131 - Dynamic Web Fundamentals. View information about Sean Wood and find links to various projects and web development resources here.">
+    <meta name="author" content="Sean Wood">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - Sean Wood</h1>
+    <header>
+        <span id="course-title" class="roboto-regular">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav class="roboto-regular">
+            <a href="https://www.linkedin.com/in/seanwood-lagrande/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="roboto-regular">Sean P. Wood</h1>
+        <div id="card-parent">
+            <section class="card left-card">
+                <h2 class="roboto-regular">About Me</h2>
+                <p class="gelasio">My name is Sean Wood. I have a great passion for two forms of art in this
+                    world. Those two art forms are
+                    music and computer programming. I currently live with my family of 5 in La Grande, Oregon. For now,
+                    I find myself working long shifts at
+                    walmart to pay the bills, but hope that one day my hard work and schooling will pay off and that I
+                    will
+                    be able to become a successful software developer to support my family.</p>
+                <img src="images/sean-wood.jpg" alt="Sean Wood">
+                <h3 class="roboto-regular">La Grande, Oregon</h3>
+                <figure>
+                    <img src="images/lagrande.jpg" alt="La Grande 1908">
+                    <figcaption>Downtown La Grande in 1908</figcaption>
+                </figure>
+                <article class="gelasio">La Grande is a small rural town in Eastern Oregon which sits on the western
+                    side of
+                    the Grande Ronde
+                    Valley. It is home to Eastern Oregon University making it a well-known college town in the state.
+                    Founded in 1861, La Grande is well known for its history and unique culture.
+                </article>
+            </section> <!--card-->
+            <section class="card">
+                <h2 class="roboto-regular">Web Dev Resources</h2>
+                <ul>
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">lorem Picsum Image Placeholder</a></li>
+                </ul>
+            </section> <!--card-->
+        </div>
+    </main>
+    <footer>
+        <p class="roboto-regular">&copy; <span id="currentYear"></span> | Sean Wood | USA</p>
+        <p class="roboto-regular" id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
