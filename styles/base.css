@@ -30,8 +30,11 @@
     margin: 0;
 }
 
-#course-title {
+header {
     width: 100%;
+}
+
+#course-title {
     background: var(--main-hd-color);
     padding: 1rem;
     font-size: 1.5rem;
@@ -52,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #444;
+    text-decoration: overline;
 }
 
 main {
@@ -77,16 +80,13 @@ main h1 {
     margin: 0.5rem;
     display: grid;
     overflow: hidden;
-}
-
-.card {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .card h2 {
     grid-column: 1 / 4;
     background: var(--main-hd-color);
-    color: var(--main-font-color);
+    color: var(--secondary-font-color);
     text-align: center;
     padding: .4rem;
     height: 2.5rem;
