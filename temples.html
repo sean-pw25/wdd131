@@ -9,61 +9,66 @@
     <meta name="author" content="Sean Wood">
     <link href="styles/temples.css" rel="stylesheet">
     <link href="styles/temples-large.css" rel="stylesheet">
-    <link href="styles/base.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>Temple Album</h1>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
-            </ul>
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
         </nav>
+        <button id="menu"></button>
     </header>
     <main>
-        <h1></h1>
-        <figure>
-            <img src="images/meridian-idaho-temple.jpg">
-            <figcaption>Meridian Idaho Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/meridian-idaho-temple.jpg">
-            <figcaption>Meridian Idaho Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/meridian-idaho-temple.jpg">
-            <figcaption>Meridian Idaho Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/meridian-idaho-temple.jpg">
-            <figcaption>Meridian Idaho Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/meridian-idaho-temple.jpg">
-            <figcaption>Meridian Idaho Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/meridian-idaho-temple.jpg">
-            <figcaption>Meridian Idaho Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/meridian-idaho-temple.jpg">
-            <figcaption>Meridian Idaho Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/meridian-idaho-temple.jpg">
-            <figcaption>Meridian Idaho Temple</figcaption>
-        </figure>
-        <figure>
-            <img src="images/meridian-idaho-temple.jpg">
-            <figcaption>Meridian Idaho Temple</figcaption>
-        </figure>
+        <h1>Home</h1>
+        <div class="fig-container">
+            <figure>
+                <img src=" images/meridian-idaho-temple.jpg">
+                <figcaption>Meridian Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/meridian-idaho-temple.jpg">
+                <figcaption>Meridian Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/meridian-idaho-temple.jpg">
+                <figcaption>Meridian Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/meridian-idaho-temple.jpg">
+                <figcaption>Meridian Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/meridian-idaho-temple.jpg">
+                <figcaption>Meridian Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/meridian-idaho-temple.jpg">
+                <figcaption>Meridian Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/meridian-idaho-temple.jpg">
+                <figcaption>Meridian Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/meridian-idaho-temple.jpg">
+                <figcaption>Meridian Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/meridian-idaho-temple.jpg">
+                <figcaption>Meridian Idaho Temple</figcaption>
+            </figure>
+        </div> <!--.fig-container-->
     </main>
     <footer>
         <p class="roboto-regular">&copy; <span id="currentYear"></span> | Sean Wood | USA</p>
