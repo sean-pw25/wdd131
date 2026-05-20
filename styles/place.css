@@ -1,0 +1,53 @@
+:root {
+    --hd-font: "Cinzel", serif;
+    --bd-font: "Gelasio", serif;
+    --hd-color: #990f1f;
+    --primary-bd-color: #094e86;
+    --tertiary-bd-color: #644a11;
+    --font-color: #EEE;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+header,
+main,
+footer {
+    max-width: 768px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--hd-color);
+    color: var(--font-color);
+    font-family: var(--hd-font);
+    text-align: center;
+}
+
+header h1 {
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: .4rem 0;
+}
+
+section {
+    margin: .6rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+section span h2 {
+    display: block;
+}
+
+section dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
