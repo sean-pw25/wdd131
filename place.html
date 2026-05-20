@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Gelasio:wght@600&display=swap"
         rel="stylesheet">
     <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -30,48 +31,49 @@
         <section class="data">
             <h2>Data</h2>
             <dl>
-                <dt>Label</dt>
-                <dd>Value</dd>
+                <dt>Area:</dt>
+                <dd>3,796,742 sq mi</dd>
 
-                <dt>Label</dt>
-                <dd>Value</dd>
+                <dt>Population:</dt>
+                <dd>341,784,857</dd>
 
-                <dt>Label</dt>
-                <dd>Value</dd>
+                <dt>Capital:</dt>
+                <dd>Washington D.C.</dd>
 
-                <dt>Label</dt>
-                <dd>Value</dd>
+                <dt>Languages:</dt>
+                <dd>English, Spanish</dd>
 
-                <dt>Label</dt>
-                <dd>Value</dd>
+                <dt>Currency:</dt>
+                <dd>USD</dd>
 
-                <dt>Label</dt>
-                <dd>Value</dd>
+                <dt>Calling Code:</dt>
+                <dd>+1</dd>
+
+                <dt>Internet TLD:</dt>
+                <dd>.us</dd>
             </dl>
         </section>
         <section class="weather">
-            <span>
-                <h2>Weather</h2>
-                <img src="weather.svg" alt="weather icon">
-            </span>
+            <h2>Weather</h2>
+            <img id="weather-img" src="images/place/weather.svg" alt="weather icon">
             <dl>
-                <dt>Label</dt>
-                <dd>Value</dd>
+                <dt>Temperature:</dt>
+                <dd>48 °F</dd>
 
-                <dt>Label</dt>
-                <dd>Value</dd>
+                <dt>Conditions:</dt>
+                <dd>Partly Cloudy</dd>
 
-                <dt>Label</dt>
-                <dd>Value</dd>
+                <dt>Wind:</dt>
+                <dd>14 mph</dd>
 
-                <dt>Label</dt>
-                <dd>Value</dd>
+                <dt>Wind Chill:</dt>
+                <dd id="wind-chill">N/A</dd>
             </dl>
         </section>
     </main>
     <footer>
-        <p></p>
-        <p></p>
+        <p class="roboto-regular">&copy; <span id="currentYear"></span> | Sean Wood | USA</p>
+        <p class="roboto-regular" id="lastModified"></p>
     </footer>
 </body>
 

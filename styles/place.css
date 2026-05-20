@@ -3,7 +3,7 @@
     --bd-font: "Gelasio", serif;
     --hd-color: #990f1f;
     --primary-bd-color: #094e86;
-    --tertiary-bd-color: #644a11;
+    --secondary-bd-color: #8e7c55;
     --font-color: #EEE;
 }
 
@@ -15,6 +15,7 @@
 header,
 main,
 footer {
+    background-color: var(--secondary-bd-color);
     max-width: 768px;
     min-width: 320px;
     margin: 0 auto;
@@ -31,23 +32,58 @@ header h1 {
     padding: 1rem;
 }
 
-img {
+main picture img {
     width: 100%;
     height: auto;
     margin: .4rem 0;
 }
 
 section {
-    margin: .6rem;
-    border: 1px solid black;
     text-align: center;
+    background-color: var(--primary-bd-color);
+    border-bottom: .5rem solid var(--secondary-bd-color)
 }
 
-section span h2 {
+section h2 {
     display: block;
+    color: var(--font-color);
+    font-family: var(--hd-font);
+    background-color: var(--hd-color);
+    font-size: 1.7rem;
+    padding: .3rem;
+}
+
+section img {
+    background-color: var(--hd-color);
+    display: block;
+    height: 3rem;
+    width: 100%;
 }
 
 section dl {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color: var(--font-color);
+    font-family: var(--bd-font);
+    font-size: 1.1rem;
+}
+
+section dt {
+    text-align: right;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+section dd {
+    text-align: left;
+    padding: .4rem;
+}
+
+footer {
+    background-color: var(--hd-color);
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1rem;
+    color: var(--font-color);
+    font-family: var(--bd-font);
 }

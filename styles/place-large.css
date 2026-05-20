@@ -1,5 +1,45 @@
 @media screen and (min-width: 768px) {
 
+    header,
+    main,
+    footer {
+        max-width: 1440px;
+    }
+
+    main {
+        position: relative;
+    }
+
+    section {
+        position: absolute;
+        padding: .5rem 2rem;
+    }
+
+    section h2 {
+        padding: .5rem;
+        position: relative;
+        left: -2.5rem;
+        width: 12rem;
+    }
+
+    section.data {
+        top: 2rem;
+        left: 1.2rem;
+    }
+
+    section.weather {
+        bottom: 2rem;
+        right: 1.2rem;
+    }
+
+    section.weather h2::after {
+        content: " ⛅"
+    }
+
+    #weather-img {
+        display: none;
+    }
+
     section span h2 {
         display: inline;
     }
