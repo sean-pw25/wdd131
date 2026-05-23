@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 5em;
+}
+
+caption,
+th,
+td {
+    padding: 1rem;
+}
+
+caption,
+thead {
+    color: #fff;
+    font-weight: 600;
+}
+
+caption {
+    background-color: #000;
+}
+
+thead {
+    background-color: #333;
+}
+
+thead tr th:first-of-type {
+    background-color: #000;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee
+}
+
+th,
+td {
+    border: 1px solid black;
+}
