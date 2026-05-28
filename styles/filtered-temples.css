@@ -64,11 +64,37 @@ main h2 {
     font-size: 2em;
 }
 
-.fig-container {
+#temple-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 0.5rem;
     place-items: center;
+}
+
+section {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+section h3,
+section p {
+    text-align: center;
+}
+
+section p {
+    font-weight: 500;
+}
+
+section span {
+    font-weight: 300;
+    color: purple;
+    font-size: .9rem
+}
+
+section img {
+    width: 18rem;
+    height: auto;
 }
 
 #menu {
