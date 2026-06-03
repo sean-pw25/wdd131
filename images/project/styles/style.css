@@ -1,0 +1,13 @@
+root {
+    --header-background: #00471c;
+    --body-background: #efeae1;
+    --section-background: #2d523f;
+    --footer-background: #452A0C;
+
+    --header-text-color: #eee;
+    --body-text-color: #00471c;
+    --section-text-color: #efeae1;
+
+    --heading-font: font-family: "Roboto", sans-serif;
+    --body-font: font-family: "Cause", cursive;
+}
