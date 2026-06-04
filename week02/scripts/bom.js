@@ -1,23 +1,23 @@
 // reference dom elements
-const inputElement = document.querySelector("#favchap");
-const buttonElement = document.querySelector("button");
+const input = document.querySelector("#favchap");
+const button = document.querySelector("button");
 const listElement = document.querySelector("#list");
 
 // create entry and add to list
-buttonElement.addEventListener("click", function () {
-    if (inputElement.value.trim() != "") {
+button.addEventListener("click", function () {
+    if (input.value.trim() != "") {
         const li = document.createElement("li");
-        li.textContent = inputElement.value;
+        li.textContent = input.value;
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "❌";
         deleteButton.setAttribute("aria-label", "close button")
         deleteButton.addEventListener("click", function () {
             listElement.removeChild(li)
-            inputElement.focus();
+            input.focus();
         });
         li.append(deleteButton);
         listElement.appendChild(li);
-        inputElement.value = ""
+        input.value = ""
     }
-    inputElement.focus();
+    input.focus();
 });
