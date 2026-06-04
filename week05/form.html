@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description"
+        content="An HTML form with a confirmation page that meets the requirements of the week 5 assignment titled 'Product Review Form'">
+    <meta name="author" content="Sean Wood">
+    <link rel="stylesheet" href="styles/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cause&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label for="product-name">Product Name*</label>
+            <select name="product-name" id="product-name" required>
+                <option id="product-select" value="" disabled selected>Select a Product...</option>
+                <!-- dynamically created options -->
+            </select>
+
+            <label>Overall Rating
+                <div class="stars">
+                    <input type="radio" name="stars" value="5" id="one-star">
+                    <label for="one-star"></label>
+
+                    <input type="radio" name="stars" value="4" id="two-star">
+                    <label for="two-star"></label>
+
+                    <input type="radio" name="stars" value="3" id="three-star">
+                    <label for="three-star"></label>
+
+                    <input type="radio" name="stars" value="2" id="four-star">
+                    <label for="four-star"></label>
+
+                    <input type="radio" name="stars" value="1" id="five-star">
+                    <label for="five-star"></label>
+                </div>
+            </label>
+
+            <label for="date">Date Of Installation*</label>
+            <input type="date" name="date" id="date" required>
+
+            <div class="checkbox">
+                <label>Which features did you find useful in the product? <span id="select-all"></span>
+                    <label><input type="checkbox" name="feature" id="durability" value="durabiltiy"> Durability</label>
+                    <label><input type="checkbox" name="feature" id="ease" value="ease"> Ease of Use</label>
+                    <label><input type="checkbox" name="feature" id="performance" value="performance">
+                        Performance</label>
+                    <label><input type="checkbox" name="feature" id="design" value="design"> Design</label>
+                </label>
+            </div>
+
+            <label for="review-text">Written Review</label>
+            <textarea id="review-text" name="review-text"></textarea>
+
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" autocomplete="John Doe">
+
+            <input type="submit" value="Leave Review">
+    </main>
+    <footer>
+        <footer>
+            <p class="roboto-regular">&copy; <span id="currentYear"></span> | Sean Wood | USA</p>
+            <p class="roboto-regular" id="lastModified"></p>
+        </footer>
+    </footer>
+</body>
+
+</html>
