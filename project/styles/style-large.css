@@ -1,0 +1,166 @@
+:root {
+    --header-background: #00471c;
+    --body-background: #efeae1;
+    --section-background: #2d523f;
+    --footer-background: #452A0C;
+
+    --header-text-color: #eee;
+    --body-text-color: #00471c;
+    --section-text-color: #efeae1;
+
+    --header-font: "Roboto", sans-serif;
+    --body-font: "Cause", cursive;
+}
+
+@media screen and (min-width: 767px) {
+
+    body {
+        max-width: 1280px;
+    }
+
+    header {
+        height: 100px;
+        display: flex;
+        position: sticky;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    #logo-button {
+        padding: .4rem 5rem .5rem 7rem;
+    }
+
+    #logo-button img {
+        position: relative;
+    }
+
+    .navigation {
+        display: flex;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .navigation ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navigation li {
+        width: auto;
+
+    }
+
+    .navigation a {
+        padding: 2.4rem;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .title {
+        top: 15px;
+    }
+
+    #opener picture {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+
+    #opener .button-container {
+        top: 80%;
+    }
+
+    #about-section {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+    }
+
+    #about-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    #bio {
+        font-size: 1.4rem;
+        padding: 5rem;
+    }
+
+    #bio img {
+        width: 10rem;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    #review {
+        height: 12rem;
+    }
+
+    .service p:first-child {
+        margin-left: 8rem;
+    }
+
+    #info-text {
+        width: 50%;
+        margin: auto;
+    }
+
+    .info {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        align-items: baseline;
+    }
+
+    #contact-info iframe {
+        display: initial;
+    }
+
+    #contact-info p,
+    #contact-info address {
+        width: 70%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: .7fr 1fr 1fr .3fr;
+    }
+
+    #back-to-top {
+        display: none;
+    }
+
+    .footer-info {
+        height: 100%;
+        display: block;
+        padding: 3rem;
+        margin-top: 1rem
+    }
+
+    .footer-info p,
+    .footer-info h3 {
+        text-align: left;
+    }
+
+    .footer-info h3 {
+        padding-top: 2rem;
+    }
+
+    footer>p {
+        grid-column: 1/5;
+    }
+
+    footer nav {
+        flex-direction: column;
+        border: none;
+        height: 100%;
+        padding-top: 3.5rem;
+    }
+}
