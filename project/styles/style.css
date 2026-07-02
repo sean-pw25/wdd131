@@ -214,7 +214,8 @@ main {
     font-size: 1.2rem;
 }
 
-#review>p {
+#review>p,
+#review>h2 {
     animation: fadeInOut 10s ease-in-out infinite;
 }
 
@@ -470,4 +471,8 @@ footer>div {
 
 .footer-info {
     display: none;
+}
+
+#packwalk-img {
+    width: 100%;
 }

@@ -16,7 +16,7 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function cycleReviews() {
     for (let i = 0; i < reviews.length; i++) {
-        review.innerHTML = `<p id="review-name">${reviews[i].name}</p><p id="review-stars">${GetReviewStars(reviews[i].stars)}</p><p>"${reviews[i].content}"</p>`;
+        review.innerHTML = `<h2 id="review-name">${reviews[i].name}</h2><p id="review-stars">${GetReviewStars(reviews[i].stars)}</p><p>"${reviews[i].content}"</p>`;
         await sleep(10000)
     }
     cycleReviews();
